@@ -3,8 +3,8 @@ import openpyxl
 import datetime
 import pandas as pd
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app=application
 ## global variables
 path='appra.xlsx'
 var={}
