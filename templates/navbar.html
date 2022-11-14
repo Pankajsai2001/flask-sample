@@ -1,0 +1,38 @@
+<nav class="navbar sticky-top navbar-expand-lg" style="box-shadow:10px 10px 30px 1px grey; background-color: white; max-width : 100%;">
+    <div class="container-fluid">
+      <a  href=" {{ url_for('index') }}"><img src="\static\AccoliteLogo.jpg" alt="Accolite Digital" style="width:150px;height:50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a style = "color:black" class="nav-link active" aria-current="page" href= " {{ url_for('index') }} " disabled >Home</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a style = "color:black" class="nav-link" href="/appral/evaluation" disabled >Evaluation</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Evaluation
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/appral/evaluation">Business Value Analysis</a></li>
+              <li><a class="dropdown-item" href="/appral/techeval">Technical Fitment Analysis</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a style = "color:black" class="nav-link" href="#">Evaluation Summary</a>
+          </li> -->
+          <li class="nav-item">
+            <a style = "color:black" class="nav-link" href="/#">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <h4 style = "color: #38435B ">Application  </h4><h4 style="color: #FB7720 ">&nbsp;Rationalization Framework</h4>
+    </div>
+    
+  </nav>
+  <br><br>

@@ -1,0 +1,27 @@
+.pankaj {
+    background-color: rgba(76, 0, 130, 0.153);
+    border-radius: 10px;
+    box-shadow:20px 20px 50px 5px grey;
+    padding: 10px 0px 20px 0px;
+}
+
+.forms {
+    padding:10px 10px 0px 10px;
+        
+}
+
+.tables {
+    padding-left: 5px;
+}
+
+.tables_s {
+    width: 200%;
+}
+
+.do {
+    margin: 5px;
+}
+
+img.do {
+    margin-left: 60px;
+}

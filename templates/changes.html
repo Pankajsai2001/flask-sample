@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h2> {{ sheet_name }}</h2>
+    {{ name }}<br>
+    {{ email }} {{ time }}
+    <br>
+    <br>
+    {{ df_html | safe }}
+    <br>
+    <button class='btn btn-primary' onclick="window.location.href= '/appral/dashboard' ">Submit</button>
+</div>
+{% endblock %}

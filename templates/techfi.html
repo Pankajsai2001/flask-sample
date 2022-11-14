@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <form action="/appral/techfi" method="POST">
+        <div class="container">
+            <div class="pankaj forms">
+                <!-- <div style="background-color:#fefeee;padding:10px 10px 0px 10px;border-radius: 10px;box-shadow:20px 20px 50px 10px grey"> -->
+                <input type="text" class="form-control" name="sheet_name" placeholder="Telco Name">&nbsp;
+                <input type="text" class="form-control" name="name" placeholder="Name"> &nbsp;
+                <input type="email" class="form-control" name="email" placeholder="Email-Id"> &nbsp;
+            </div>
+            </br></br>
+
+            <div class="pankaj tables">
+                <table class="table">
+                    <tr>
+                        {% for col in column_names %}
+                        <th> {{ col }} </th>
+                        {% endfor %}
+                    </tr>
+                    {% for row in row_data %}
+                    <tr>
+                        {% for col,data in zip(column_names ,row)  %}
+                        {% if col == comp %}
+                            <td>
+                                <input type="text" name="techni{{ row.0 }}" style="height: 80px; width: 300px;">
+                                <!-- <select name="{{ col }}{{ row.0 }}" >
+                                    <option value="NO">NO</option>
+                                    <option value="YES">YES</option>
+                                </select> -->
+                            </td>
+                        {% else %}
+                            <td> {{ data }} </td>
+                        {% endif %}
+            
+                        {% endfor %}
+                    </tr>    
+                    {% endfor %}  
+                </table>
+                </div>
+                <br>
+                {# <a href="/view" class="btn btn-primary">History</a> #}
+                <button class="btn btn-primary" type="submit">Save</button>
+
+
+
+        
+    </form>
+
+{% endblock %}

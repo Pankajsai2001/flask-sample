@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{% endfor %}
+
+<div class="container pankaj">
+    <h1>What is it?</h1>
+    <ul>
+        <li>This 'Application Rationalization Framework' is a solution to assess ARF 
+            Capability completion and maturity for a Telecom Service Provider. </li>
+        <li>The framework is built using experience from other Telecom Service providers across the globe, 
+            and best practices in ARF from Telecom and other industries.</li>
+        <li>Using this framework, Telecom Service Provider can identify any gaps in existing ARF Capabilities, 
+            and can work on contextual recommendations to work on gaps, and to create a requirements backlog.</li>
+    </ul>
+    
+</div>
+</br></br>
+
+<div class="container pankaj">
+    <h2>How to Use it?</h2>
+    <div class="container">
+        <ul>
+        <li>Go through the questionnare and answer the form for functionalities, 
+            and the framework will provide an output with scores, and missing functionalties.</li>
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
